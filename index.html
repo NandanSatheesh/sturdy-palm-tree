@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <body onLoad="myFunction2()">
+
+<h2>HTML Buttons</h2>
+<p>HTML buttons are defined with the button tag:</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+
+<script>
+
+    function myFunction2() {
+
+    var theCookies = document.cookie.split(';');
+    var aString = '';
+    for (var i = 1 ; i <= theCookies.length; i++) {
+        aString += i + ' ' + theCookies[i-1] + "\n";
+    }
+
+
+  document.getElementById("demo").innerHTML = aString;
+}
+
+
+
+function myFunction() {
+
+    var theCookies = document.cookie.split(';');
+    var aString = '';
+    for (var i = 1 ; i <= theCookies.length; i++) {
+        aString += i + ' ' + theCookies[i-1] + "\n";
+    }
+
+    window.alert(aString);
+
+
+  document.getElementById("demo").innerHTML = aString;
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>
